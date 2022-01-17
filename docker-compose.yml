@@ -3,6 +3,7 @@ version: "3.8"
 services:
   drone-server:
     image: drone/drone:2
+    restart: always
     ports:
       - target: 80
         published: 10080
